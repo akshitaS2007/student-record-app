@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS Student Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Records</h1>
+    <input type="file" id="fileInput" accept=".csv">
+    <div id="errorMessage"></div>
+    <p id="totalNumberOfStudents"></p>
+
+    <table id="studentInfoTable">
+        <thead>
+            <tr>
+                <th><input type="text" id="searchName" placeholder="Search name"></th>
+                <th><input type="text" id="searchFatherName" placeholder="Search father name"></th>
+                <th><input type="text" id="searchAge" placeholder="Search age"></th>
+                <th>
+                    <select id="searchMathDropDown">
+                        <option value="">Search Math Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </th>
+                <th>
+                    <select id="searchEngDropDown">
+                        <option value="">Search English Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </th>
+                <th>
+                    <select id="searchCompDropDown">
+                        <option value="">Search Computer Science Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </th>   
+                <th>
+                    <select id="searchScienceDropDown">
+                        <option value="">Search Science Grade</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </th> 
+            </tr>
+            <tr>
+                <th id="name">Student Name</th>
+                <th id="fatherName">Father Name</th>
+                <th id="age">Age</th>
+                <th id="math">Math Grade</th>
+                <th id="english">English Grade</th>
+                <th id="compsci">Computer Science Grade</th>
+                <th id="science">Science Grade</th>
+            </tr>
+        </thead>
+        <tbody id="studentInfoTableBody"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
